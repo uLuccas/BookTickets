@@ -28,10 +28,6 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Teste"),
-        centerTitle: true,
-      ),
       body: Center(child: _WidgetOptions[_isSelectedIndex]),
       bottomNavigationBar: BottomNavigationBar(
           onTap: _onItemTapped,
