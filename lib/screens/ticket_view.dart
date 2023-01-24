@@ -119,13 +119,13 @@ class TicketView extends StatelessWidget {
             color: Styles.orangeColor,
             child: Row(
               children: [
-                const SizedBox(
+                SizedBox(
                   height: 20,
                   width: 10,
                   child: DecoratedBox(
                     decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.only(
+                      color: Styles.bgColor,
+                      borderRadius: const BorderRadius.only(
                           topRight: Radius.circular(10),
                           bottomRight: Radius.circular(10)),
                     ),
@@ -153,13 +153,13 @@ class TicketView extends StatelessWidget {
                     },
                   ),
                 )),
-                const SizedBox(
+                SizedBox(
                   height: 20,
                   width: 10,
                   child: DecoratedBox(
                     decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.only(
+                      color: Styles.bgColor,
+                      borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(10),
                           bottomLeft: Radius.circular(10)),
                     ),
