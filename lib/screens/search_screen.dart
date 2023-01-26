@@ -1,6 +1,7 @@
 import 'package:booktickets/utils/app_styles.dart';
 import 'package:booktickets/widget/double_text_widget.dart';
 import 'package:booktickets/widget/icon_text_widget.dart';
+import 'package:booktickets/widget/ticket_tabs.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -24,34 +25,8 @@ class SearchScreen extends StatelessWidget {
             style: Styles.headLineStyle.copyWith(fontSize: 35),
           ),
           const Gap(20),
-          Container(
-            padding: const EdgeInsets.all(3.5),
-            decoration: const BoxDecoration(
-              borderRadius: BorderRadius.horizontal(
-                  left: Radius.circular(50), right: Radius.circular(50)),
-              color: Color(0xFFF4F6FD),
-            ),
-            child: Row(children: [
-              Container(
-                padding: const EdgeInsets.symmetric(vertical: 7),
-                width: size.width * .44,
-                decoration: const BoxDecoration(
-                    borderRadius:
-                        BorderRadius.horizontal(left: Radius.circular(50)),
-                    color: Colors.white),
-                child: const Center(child: Text('Airlines Tickets')),
-              ),
-              Container(
-                padding: const EdgeInsets.symmetric(vertical: 7),
-                width: size.width * .44,
-                decoration: const BoxDecoration(
-                  borderRadius:
-                      BorderRadius.horizontal(right: Radius.circular(50)),
-                ),
-                child: const Center(child: Text('Hotels')),
-              ),
-            ]),
-          ),
+          const AppTicketsTabs(
+              firstTab: "Airlines Tickets", secondTab: "Hotels"),
           const Gap(25),
           const AppIconText(
               icon: Icons.flight_takeoff_rounded, text: 'Departure'),
