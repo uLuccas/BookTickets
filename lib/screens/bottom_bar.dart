@@ -1,4 +1,5 @@
 import 'package:booktickets/screens/home_screen.dart';
+import 'package:booktickets/screens/profile_screen.dart';
 import 'package:booktickets/screens/search_screen.dart';
 import 'package:booktickets/screens/tickets_screen.dart';
 import 'package:booktickets/utils/app_info_list.dart';
@@ -19,7 +20,7 @@ class _BottomBarState extends State<BottomBar> {
     TicketsScreen(
       ticket: ticketList[0],
     ),
-    const Text("Profile"),
+    const ProfileScreen(),
   ];
 
   int _isSelectedIndex = 0;
